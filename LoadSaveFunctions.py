@@ -13,8 +13,7 @@ def load_file():
     file_path = filedialog.askopenfilename(
         title="Select a geotiff file",
         filetypes=[
-            ("geotiff", "*.tif"),
-            ("All files", "*.*")
+            ("geotiff", "*.tif"), ("NetCDF", "*.nc"), ("All files", "*.*")
         ]
     )
     if file_path:        
