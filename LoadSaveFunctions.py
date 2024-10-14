@@ -11,9 +11,9 @@ def load_file():
     
     # Open the file dialog to select geotiff file
     file_path = filedialog.askopenfilename(
-        title="Select a geotiff file",
+        title="Select a geotiff or netCDF file",
         filetypes=[
-            ("geotiff", "*.tif"), ("NetCDF", "*.nc"), ("All files", "*.*")
+            ("All files", "*.*"), ("geotiff", "*.tif"), ("NetCDF", "*.nc")
         ]
     )
     if file_path:        
